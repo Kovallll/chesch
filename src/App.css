@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.board {
+  max-width: calc(64px * 8);
+  max-height: calc(64px * 8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  border: 1px solid black;
+}
+
+.cell {
+  width: 64px;
+  height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.pawn {
+  width: 40px;
+  height: 40px;
+  position: relative;
+}
+
+.king {
+  width: 50px;
+  height: 50px;
+  position: relative;
+}
+
+.knight {
+  width: 50px;
+  height: 50px;
+  position: relative;
+}
+
+.queen {
+  width: 55px;
+  height: 50px;
+  position: relative;
+}
+
+.bishop {
+  width: 50px;
+  height: 50px;
+  position: relative;
+}
+
+.rook {
+  padding-top: 7px;
+  width: 44px;
+  height: 44px;
+  position: relative;
+}
+
+.black {
+  background-color: rgb(167, 150, 56);
+}
+
+.white {
+  background-color: rgb(59, 68, 202);
+}
+
+.selected {
+  background-color: rgb(32, 160, 26);
+}
+
+.available {
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  background-color: rgb(234, 41, 19);
+}
+
+.lost {
+  height: calc(50vh - 60px);
+  padding: 30px;
+  margin-left: 50px;
+  background-color: lightgray;
+}
+
+.figure {
+  width: 20px;
+  height: 20px;
+}
